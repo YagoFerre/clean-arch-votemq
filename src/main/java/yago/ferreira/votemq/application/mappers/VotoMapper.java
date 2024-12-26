@@ -9,5 +9,4 @@ public interface VotoMapper {
     VotoMapper INSTANCE = Mappers.getMapper(VotoMapper.class);
 
     VotoRequest toVotoRequest(Long candidatoId);
-    Long toLong(VotoRequest votoRequest);
 }

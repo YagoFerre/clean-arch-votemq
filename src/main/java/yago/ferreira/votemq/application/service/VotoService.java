@@ -16,7 +16,6 @@ public class VotoService {
     }
 
     public void processarVoto(VotoRequest request) {
-        Long candidatoId = mapper.toLong(request);
-        gateway.executeProcessarVoto(candidatoId);
+        gateway.executeProcessarVoto(request.getIdCandidato());
     }
 }
